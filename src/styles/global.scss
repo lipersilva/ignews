@@ -1,0 +1,49 @@
+*{
+  margin: 0; //pode ser feito em todas aplicações
+  padding: 0; //pode ser feito em todas aplicações
+  box-sizing: border-box; //pode ser feito em todas aplicações
+}
+//definir como variaveis css, FACILITA MUITO a estilização
+:root {
+  --white: #FFFFFF;
+
+  --gray-100: #e1e1e6;
+  --gray-300: #a8a8b3;
+  --gray-900: #121213;
+
+  --cyan-500: #61dafb;
+
+  --yellow-500: #eba417;
+
+}
+// fonte-size adaptado aos tamanhos de telas
+@media(max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media(max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+
+body {
+  background: var(--gray-900);
+  color: var(--white);
+}
+
+body, input, textarea, select, button {
+  font: 400 1rem "Roboto", sans-serif; //pode ser feito em todas aplicações
+}
+
+button {
+  cursor: pointer; //pode ser feito em todas aplicações
+}
+
+a{
+  color: inherit; //pode ser feito em todas aplicações
+  text-decoration: none; //pode ser feito em todas aplicações
+}
